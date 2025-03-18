@@ -9,9 +9,7 @@
     <span>&nbsp;|&nbsp;</span>
     <a href="https://view.form-create.com/" target="_blank">帮助文档</a>
     <span>&nbsp;|&nbsp;</span>
-    <a href="https://form-create.com/v3/designer/" target="_blank">在线演示</a>
-    <span>&nbsp;|&nbsp;</span>
-    <a href="https://form-create.com/v3/mobile/" target="_blank">移动端在线演示</a>
+    <a href="https://form-create.com/v3/antd/designer" target="_blank">在线演示</a>
     <span>&nbsp;|&nbsp;</span>
     <a href="https://form-create.com/v3/" target="_blank">FormCreate 文档</a>
 </p>
@@ -21,13 +19,7 @@
   <a href="https://github.com/xaboy/form-create" target="_blank"><img src="https://img.shields.io/npm/dt/@form-create/designer.svg" alt="dt" /></a>
 </p>
 
-## FormCreate 低代码表单设计器
-
-**[@form-create/designer](https://github.com/xaboy/form-create-designer/tree/next/packages/element-ui)** 是基于 [@form-create/element-ui](https://github.com/xaboy/form-create) 和 **ElementPlus** 实现的低代码表单设计器组件。支持Vue2和Vue3
-
-**[@form-create/vant-designer](https://github.com/xaboy/form-create-designer/tree/next/packages/vant)** 是基于 [@form-create/vant](https://github.com/xaboy/form-create) 和 **Vant** 实现的**移动端**低代码表单设计器组件。支持Vue3
-
-**[@form-create/antd-designer](https://github.com/xaboy/form-create-designer/tree/next/packages/ant-design-vue)** 是基于 [@form-create/ant-design-vue](https://github.com/xaboy/form-create) 和 **AntDesignVue** 实现的低代码表单设计器组件。支持Vue3
+**AntDesignVue 版本的 FcDesigner 是基于 [@form-create/ant-design-vue](https://github.com/xaboy/form-create) 实现的低代码表单设计器组件。可以通过拖拽的方式快速创建表单，提高开发者对表单的开发效率，节省开发者的时间。支持Vue3**
 
 [![FcDesigner](https://static.form-create.com/file/img/banner-m2.jpg)](https://pro.form-create.com/view)
 
@@ -41,6 +33,7 @@
 - 支持样式配置
 - 支持表格布局
 - 支持表单验证
+- 支持多语言
 - 支持表单多语言
 
 ## 支持的UI框架
@@ -55,43 +48,7 @@
 
 ![demo1](https://static.form-create.com/file/img/open-designer.jpg)
 
-## Element Plus 版设计器 | [在线演示](https://form-create.com/v3/designer/)
-
-**CDN:**
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css"></link>
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
-<script src="https://unpkg.com/@form-create/element-ui@next/dist/form-create.min.js"></script>
-<script src="https://unpkg.com/@form-create/designer@next/dist/index.umd.js"></script>
-```
-
-**NodeJs:**
-
-```shell
-npm install @form-create/designer@next
-npm install @form-create/element-ui@next
-npm install element-plus
-```
-
-```js
-import FcDesigner from '@form-create/designer'
-import ELEMENT from 'element-plus';
-import 'element-plus/dist/index.css';
-
-app.use(ELEMENT);
-app.use(FcDesigner)
-app.use(FcDesigner.formCreate)
-```
-
-**使用**
-
-```html
-<fc-designer ref="designer"/>
-```
-
-## Ant Design Vue 版设计器 | [在线演示](https://form-create.com/v3/antd/designer/)
+## 引入
 
 **CDN:**
 
@@ -121,55 +78,10 @@ app.use(FcDesigner)
 app.use(FcDesigner.formCreate)
 ```
 
-**使用**
+## 使用
 
 ```html
 <fc-designer ref="designer"/>
-```
-
-
-## 移动端设计器 | [在线演示](https://form-create.com/v3/mobile/)
-
-**CDN:**
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css"></link>
-<link rel="stylesheet" href="https://unpkg.com/vant@4/lib/index.css"/>
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
-<script src="https://unpkg.com/vant@4/lib/vant.min.js"></script>
-<script src="https://unpkg.com/@form-create/element-ui@next/dist/form-create.min.js"></script>
-<script src="https://unpkg.com/@form-create/vant@next/dist/form-create.min.js"></script>
-<script src="https://unpkg.com/@form-create/vant-designer@next/dist/index.umd.js"></script>
-```
-
-**NodeJs:**
-
-```shell
-npm install @form-create/vant-designer@next
-npm install @form-create/element-ui@next
-npm install @form-create/vant@next
-npm install element-plus
-npm install vant
-```
-
-```js
-import FcDesignerMobile from '@form-create/vant-designer'
-import ELEMENT from 'element-plus';
-import vant from 'vant';
-import 'vant/lib/index.css';
-import 'element-plus/dist/index.css';
-
-app.use(ELEMENT)
-app.use(vant)
-app.use(FcDesignerMobile)
-app.use(FcDesignerMobile.formCreate)
-```
-
-**使用**
-
-```html
-<fc-designer-mobile ref="designer"/>
 ```
 
 ## 联系
